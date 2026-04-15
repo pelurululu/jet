@@ -902,3 +902,28 @@
     .pillar { border-right: none; border-bottom: 1px solid rgba(201,169,110,0.15); }
     .pillar:last-child { border-bottom: none; }
   }
+
+/* Susunan Logo & Teks */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Jarak antara gambar dan teks */
+}
+
+.header-logo-img {
+  height: 45px; /* Laraskan ketinggian logo anda di sini */
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Memastikan logo tidak terlalu besar pada skrin telefon */
+@media (max-width: 768px) {
+  .header-logo-img {
+    height: 35px;
+  }
+}
