@@ -50,7 +50,7 @@
 
 /* ── LOGO IMAGE ── */
 .nav-logo-img {
-  height: 20px;        /* Laraskan ketinggian logo mengikut citarasa */
+  height: 35px;        /* Laraskan ketinggian logo mengikut citarasa */
   width: auto;
   object-fit: contain;
   transition: height 0.4s ease; /* Animasi halus semasa skrol */
@@ -58,7 +58,7 @@
 
 /* Kecilkan sedikit logo apabila pengguna skrol ke bawah */
 nav.scrolled .nav-logo-img {
-  height: 38px;
+  height: 40px;
 }
 
 /* ── LOGO TEXT GROUP ── */
