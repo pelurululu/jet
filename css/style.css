@@ -149,11 +149,10 @@ nav.scrolled .nav-logo-img {
 }
 
 .hero-bg {
-  position: absolute;
-  inset: 0;
-  background: url("images/hero.png") center/cover no-repeat;
-  transform: scale(1.08);
-  animation: heroZoom 12s ease-out forwards;
+    position: absolute;
+    inset: 0;
+    background: url("images/hero.png") center/cover no-repeat;
+    z-index: 1; /* Ensures it stays behind text */
 }
 
 @keyframes heroZoom {
