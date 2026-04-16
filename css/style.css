@@ -151,6 +151,8 @@ nav.scrolled .nav-logo-img {
 .hero-bg {
     position: absolute;
     inset: 0;
+    object-cover: cover;
+  
 }
 
 @keyframes heroZoom {
