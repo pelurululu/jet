@@ -3,9 +3,9 @@
 /* ────────────────────────────────────────────────────────────── */
 
 :root {
-  --royal: #1B2F5E;
-  --royal-light: #2E4D8A;
-  --royal-dark: #0F1C3A;
+  --royal: #2C5F9E;       /* primary royal blue (replaces gold) */
+  --royal-light: #4A7DB5; /* lighter royal (replaces gold-light) */
+  --royal-dark: #1A3F6E;  /* deep royal (replaces gold-dark) */
 
   --black: #161616;
   --charcoal: #1E1E1E;
@@ -489,35 +489,52 @@ nav.scrolled .nav-logo-img {
   white-space: nowrap;
 }
 
+.charter-header {
+  max-width: 600px;
+  margin-bottom: 70px;
+}
+
+.charter-header .section-eyebrow {
+  margin-bottom: 20px;
+}
+
+.charter-header p {
+  font-size: 12px;
+  line-height: 2;
+  color: var(--white-dim);
+  margin-top: 20px;
+}
+
+.charter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
 .charter-card {
   position: relative;
   height: 480px;
   overflow: hidden;
   cursor: pointer;
   background: var(--charcoal-2);
-  border: 1px solid rgba(20, 40, 80, 0.1);
+  border: 1px solid rgba(44, 95, 158, 0.1);
   transition: all 0.3s ease;
 }
 
 .charter-card:hover {
-  border-color: rgba(20, 40, 80, 0.4);
+  border-color: rgba(44, 95, 158, 0.4);
   background: var(--charcoal-3);
 }
 
+/* ALL IMAGES REMOVED from charter cards */
 .charter-card-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  display: none;
 }
 
 .charter-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(22,22,22,0.95) 0%, rgba(22,22,22,0.3) 60%, transparent 100%);
-  z-index: 1;
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.95) 0%, rgba(22, 22, 22, 0.3) 60%, transparent 100%);
 }
 
 .charter-card-content {
@@ -528,7 +545,6 @@ nav.scrolled .nav-logo-img {
   padding: 32px 28px;
   transform: translateY(10px);
   transition: transform 0.4s ease;
-  z-index: 2;
 }
 
 .charter-card:hover .charter-card-content {
@@ -578,7 +594,6 @@ nav.scrolled .nav-logo-img {
   display: flex;
   align-items: center;
   gap: 10px;
-  text-decoration: none;
 }
 
 .charter-card-arrow::after {
@@ -881,72 +896,26 @@ footer {
   nav { padding: 24px 32px; }
   nav.scrolled { padding: 16px 32px; }
   .nav-links { display: none; }
-
-  #philosophy {
-    grid-template-columns: 1fr;
-    gap: 60px;
-    padding: 80px 32px;
-  }
-  .philosophy-visual { height: 340px; }
-  .philosophy-quote-overlay {
-    right: 0;
-    bottom: 0;
-    position: relative;
-    margin-top: 16px;
-  }
-
+  #philosophy { grid-template-columns: 1fr; gap: 60px; padding: 80px 32px; }
+  .philosophy-visual { height: 400px; }
+  .philosophy-quote-overlay { right: 0; bottom: -20px; }
   .charter-grid { grid-template-columns: 1fr 1fr; }
-  .charter-card { height: 380px; }
-  .charter-card-desc { opacity: 1; transform: translateY(0); }
-  .charter-card-arrow { opacity: 1; }
-  .charter-card-content { transform: translateY(0); }
-
-  #ownership {
-    grid-template-columns: 1fr;
-    padding: 80px 32px;
-    gap: 60px;
-  }
-  .ownership-visual { height: 320px; }
-  .ownership-stat-badge {
-    top: 10px;
-    left: 10px;
-  }
-
-  footer { grid-template-columns: 1fr; gap: 40px; padding: 50px 32px; }
+  #ownership { grid-template-columns: 1fr; padding: 80px 32px; gap: 60px; }
+  .ownership-visual { height: 380px; }
+  footer { grid-template-columns: 1fr; gap: 40px; }
   #charter { padding: 80px 32px; }
   .hero-content { padding: 0 32px 80px; }
   .hero-badge { display: none; }
-  .footer-bottom {
-    padding: 20px 32px;
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-  }
+  .footer-bottom { padding: 20px 32px; flex-direction: column; gap: 8px; text-align: center; }
+  footer { padding: 50px 32px; }
   .divider { margin: 0 32px; }
 }
 
 @media (max-width: 640px) {
   .charter-grid { grid-template-columns: 1fr; }
-  .charter-card { height: 280px; }
-  .charter-card-desc { opacity: 1; transform: translateY(0); }
-  .charter-card-arrow { opacity: 1; }
-  .charter-card-content { transform: translateY(0); padding: 24px 20px; }
-
-  .hero-title { font-size: 36px; }
-  .hero-desc { font-size: 11px; }
-  .hero-content { padding: 0 24px 60px; }
-
+  .charter-card { height: 320px; }
+  .hero-title { font-size: 38px; }
   .philosophy-pillars { grid-template-columns: 1fr; }
-  .pillar { border-right: none; border-bottom: 1px solid rgba(20, 40, 80, 0.15); }
+  .pillar { border-right: none; border-bottom: 1px solid rgba(44, 95, 158, 0.15); }
   .pillar:last-child { border-bottom: none; }
-
-  .ownership-card { padding: 28px 24px; }
-  .ownership-cards { gap: 8px; }
-
-  footer { padding: 40px 24px; }
-  .footer-bottom { padding: 20px 24px; }
-
-  #charter { padding: 60px 24px; }
-  #ownership { padding: 60px 24px; }
-  #philosophy { padding: 60px 24px; }
 }
