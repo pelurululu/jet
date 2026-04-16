@@ -1,15 +1,17 @@
 :root {
-    --gold: #C9A96E;
-    --gold-light: #E8D5B0;
-    --gold-dark: #8B6914;
-    --black: #080808;
-    --charcoal: #111111;
-    --charcoal-2: #1A1A1A;
-    --charcoal-3: #222222;
-    --white: #F5F0EA;
-    --white-dim: rgba(245,240,234,0.6);
-    --white-faint: rgba(245,240,234,0.08);
-  }
+  --gold: #C9A96E;           /* keep — gold accents work beautifully with this palette */
+  --gold-light: #E8D5B0;     /* keep */
+  --gold-dark: #8B6914;      /* keep */
+
+  --black: #0A0A0F;          /* obsidian black — deep blue-black, not pure black */
+  --charcoal: #12121A;       /* obsidian mid — slightly lifted for layering */
+  --charcoal-2: #1C1C28;     /* obsidian surface — subtle cool undertone */
+  --charcoal-3: #26263A;     /* obsidian border — visible but not harsh */
+
+  --white: #F2EDE6;          /* soft pearl — warm, creamy, luminous */
+  --white-dim: rgba(242,237,230,0.55);   /* pearl dimmed — for subtext */
+  --white-faint: rgba(242,237,230,0.07); /* pearl ghost — for hover surfaces */
+}
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -129,7 +131,7 @@ nav.scrolled .nav-logo-img {
     position: absolute;
     inset: 0;
     background: 
-      url('images/hero.png') center/cover no-repeat;
+      url("images/hero.png") center/cover no-repeat;
     transform: scale(1.08);
     animation: heroZoom 12s ease-out forwards;
   }
