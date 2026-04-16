@@ -1,16 +1,16 @@
 :root {
-  --gold: #C9A96E;           /* keep — gold accents work beautifully with this palette */
-  --gold-light: #E8D5B0;     /* keep */
-  --gold-dark: #8B6914;      /* keep */
+  --gold: #C9A96E;
+  --gold-light: #E8D5B0;
+  --gold-dark: #8B6914;
 
-  --black: #0A0A0F;          /* obsidian black — deep blue-black, not pure black */
-  --charcoal: #12121A;       /* obsidian mid — slightly lifted for layering */
-  --charcoal-2: #1C1C28;     /* obsidian surface — subtle cool undertone */
-  --charcoal-3: #26263A;     /* obsidian border — visible but not harsh */
+  --black: #161616;           /* primary dark — pure near-black, slightly warmer than obsidian */
+  --charcoal: #1E1E1E;        /* lifted mid — subtle step above black */
+  --charcoal-2: #272727;      /* surface layer */
+  --charcoal-3: #313131;      /* border layer — visible but controlled */
 
-  --white: #F2EDE6;          /* soft pearl — warm, creamy, luminous */
-  --white-dim: rgba(242,237,230,0.55);   /* pearl dimmed — for subtext */
-  --white-faint: rgba(242,237,230,0.07); /* pearl ghost — for hover surfaces */
+  --white: #F2F1ED;           /* primary light — warm off-white, slightly cooler than before */
+  --white-dim: rgba(242,241,237,0.55);   /* dimmed for subtext */
+  --white-faint: rgba(242,241,237,0.06); /* ghost — for hover surfaces */
 }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,28 +37,27 @@
     transition: background 0.5s ease, padding 0.4s ease;
   }
   nav.scrolled {
-    background: rgba(10,10,15,0.95);
+    background: rgba(22,22,22,0.95);
     backdrop-filter: blur(12px);
     padding: 18px 60px;
     border-bottom: 1px solid rgba(201,169,110,0.15);
   }
  /* ── LOGO CONTAINER ── */
 .nav-logo {
-  display: flex;       /* Menjadikan imej dan teks duduk sebelah-sebelah */
-  align-items: center; /* Selaraskan secara menegak di tengah */
-  gap: 16px;           /* Jarak antara imej logo dan teks */
+  display: flex;
+  align-items: center;
+  gap: 16px;
   text-decoration: none;
 }
 
 /* ── LOGO IMAGE ── */
 .nav-logo-img {
-  height: 50px;        /* Laraskan ketinggian logo mengikut citarasa */
+  height: 50px;
   width: auto;
   object-fit: contain;
-  transition: height 0.4s ease; /* Animasi halus semasa skrol */
+  transition: height 0.4s ease;
 }
 
-/* Kecilkan sedikit logo apabila pengguna skrol ke bawah */
 nav.scrolled .nav-logo-img {
   height: 60px;
 }
@@ -66,13 +65,13 @@ nav.scrolled .nav-logo-img {
 /* ── LOGO TEXT GROUP ── */
 .nav-logo-text {
   display: flex;
-  flex-direction: column; /* Teks kekal tersusun atas (Main) dan bawah (Sub) */
+  flex-direction: column;
   gap: 2px;
 }
 
 .nav-logo-main {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;      /* Sedikit lebih besar untuk impak premium */
+  font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: #ffffff;
@@ -83,7 +82,7 @@ nav.scrolled .nav-logo-img {
   font-family: 'Tenor Sans', sans-serif;
   font-size: 8.5px;
   letter-spacing: 0.25em;
-  color: var(--gold);   /* Pastikan variable --gold sudah didefinisikan */
+  color: var(--gold);
   text-transform: uppercase;
 }
   .nav-links {
@@ -142,13 +141,13 @@ nav.scrolled .nav-logo-img {
   .hero-overlay {
     position: absolute;
     inset: 0;
-background: linear-gradient(
-  170deg,
-  rgba(10,10,15,0.15) 0%,
-  rgba(10,10,15,0.3) 40%,
-  rgba(10,10,15,0.85) 80%,
-  rgba(10,10,15,1) 100%
-);
+    background: linear-gradient(
+      170deg,
+      rgba(22,22,22,0.15) 0%,
+      rgba(22,22,22,0.3) 40%,
+      rgba(22,22,22,0.85) 80%,
+      rgba(22,22,22,1) 100%
+    );
   }
   .hero-grain {
     position: absolute;
@@ -233,7 +232,7 @@ background: linear-gradient(
     text-transform: uppercase;
     color: var(--white-dim);
     text-decoration: none;
-    border-bottom: 1px solid rgba(245,240,234,0.25);
+    border-bottom: 1px solid rgba(242,241,237,0.25);
     padding-bottom: 3px;
     transition: color 0.3s, border-color 0.3s;
   }
@@ -377,8 +376,7 @@ background: linear-gradient(
     font-size: 7px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-   color: rgba(242,237,230,0.35);
-
+    color: rgba(242,241,237,0.35);
   }
 
   /* ── SECTION COMMONS ── */
@@ -465,7 +463,7 @@ background: linear-gradient(
   .charter-card-overlay {
     position: absolute;
     inset: 0;
-   background: linear-gradient(to top, rgba(10,10,15,0.95) 0%, rgba(10,10,15,0.3) 60%, transparent 100%);
+    background: linear-gradient(to top, rgba(22,22,22,0.95) 0%, rgba(22,22,22,0.3) 60%, transparent 100%);
   }
   .charter-card-content {
     position: absolute;
@@ -493,7 +491,7 @@ background: linear-gradient(
   .charter-card-desc {
     font-size: 10.5px;
     line-height: 1.8;
-    color: rgba(245,240,234,0.55);
+    color: rgba(242,241,237,0.55);
     opacity: 0;
     transform: translateY(8px);
     transition: opacity 0.4s 0.1s ease, transform 0.4s 0.1s ease;
@@ -761,7 +759,7 @@ background: linear-gradient(
     font-weight: 300;
   }
   .contact-right {
-    background: rgba(18,18,26,0.85);
+    background: rgba(22,22,22,0.85);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(201,169,110,0.15);
     padding: 52px 48px;
@@ -794,7 +792,7 @@ background: linear-gradient(
   .form-group textarea,
   .form-group select {
     width: 100%;
-    background: rgba(255,255,255,0.04);
+    background: rgba(242,241,237,0.04);
     border: 1px solid rgba(201,169,110,0.2);
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
@@ -875,11 +873,11 @@ background: linear-gradient(
   }
   .footer-bottom p {
     font-size: 10px;
-    color: rgba(242,237,230,0.25);
+    color: rgba(242,241,237,0.25);
   }
   .footer-bottom a {
     font-size: 10px;
-    color: rgba(242,237,230,0.25);
+    color: rgba(242,241,237,0.25);
     text-decoration: none;
     transition: color 0.3s;
   }
