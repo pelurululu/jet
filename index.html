@@ -323,7 +323,7 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0 });
+  }, { threshold: 0.12 });
   reveals.forEach(el => io.observe(el));
 
   document.querySelectorAll('a[href^="#"]').forEach(a => {
