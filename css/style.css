@@ -148,12 +148,7 @@ nav.scrolled .nav-logo-img {
   overflow: hidden;
 }
 
-.hero-bg {
-    position: absolute;
-    inset: 0;
-    object-cover: cover;
-  
-}
+
 
 @keyframes heroZoom {
   from { transform: scale(1.08); }
