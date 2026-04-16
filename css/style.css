@@ -3,8 +3,8 @@
 /* ────────────────────────────────────────────────────────────── */
 
 :root {
-  --royal: #1B2F5E;
-  --royal-light: #2E4D8A;
+  --royal: #2C5FBF;
+  --royal-light: #4A7FE0;
   --royal-dark: #0F1C3A;
 
   --black: #161616;
@@ -13,7 +13,7 @@
   --charcoal-3: #313131;
 
   --white: #F2F1ED;
-  --white-dim: rgba(242,241,237,0.55);
+  --white-dim: rgba(242,241,237,0.80);
   --white-faint: rgba(242,241,237,0.06);
 }
 
