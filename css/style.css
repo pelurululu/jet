@@ -158,8 +158,14 @@ nav.scrolled .nav-logo-img {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(170deg, rgba(22,22,22,0.15) 0%, rgba(22,22,22,0.3) 40%, rgba(22,22,22,0.85) 80%, rgba(22,22,22,1) 100%);
   z-index: 2;
+  /* Darkened: Started at 0.4 opacity instead of 0.15, and moved the heavy darks earlier */
+  background: linear-gradient(170deg, 
+    rgba(10, 10, 10, 0.4) 0%, 
+    rgba(10, 10, 10, 0.6) 30%, 
+    rgba(10, 10, 10, 0.9) 70%, 
+    rgba(10, 10, 10, 1) 100%
+  );
 }
 
 .hero-grain {
