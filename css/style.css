@@ -245,8 +245,8 @@ nav.scrolled .nav-logo-img {
   font-size: 9px;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  background: var(--royal);
-  color: var(--black);
+ background: var(--royal);   /* dark navy #1B2F5E */
+  color: var(--white);
   padding: 16px 36px;
   text-decoration: none;
   transition: background 0.3s, transform 0.2s;
@@ -594,6 +594,7 @@ nav.scrolled .nav-logo-img {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 }
 
 .charter-card-arrow::after {
