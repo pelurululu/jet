@@ -528,7 +528,12 @@ nav.scrolled .nav-logo-img {
 
 /* ALL IMAGES REMOVED from charter cards */
 .charter-card-bg {
-  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .charter-card-overlay {
