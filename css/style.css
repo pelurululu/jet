@@ -511,15 +511,7 @@ nav.scrolled .nav-logo-img {
   gap: 2px;
 }
 
-.charter-card {
-  position: relative;
-  height: 480px;
-  overflow: hidden;
-  cursor: pointer;
-  background: var(--charcoal-2);
-  border: 1px solid rgba(44, 95, 158, 0.1);
-  transition: all 0.3s ease;
-}
+
 
 .charter-card:hover {
   border-color: rgba(44, 95, 158, 0.4);
@@ -527,24 +519,33 @@ nav.scrolled .nav-logo-img {
 }
 
 /* ALL IMAGES REMOVED from charter cards */
+
+
+
+
+.charter-card {
+  position: relative;
+  overflow: hidden;
+}
+
 .charter-card-bg {
-  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .charter-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(22, 22, 22, 0.95) 0%, rgba(22, 22, 22, 0.3) 60%, transparent 100%);
+  z-index: 1;
 }
 
 .charter-card-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 32px 28px;
-  transform: translateY(10px);
-  transition: transform 0.4s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .charter-card:hover .charter-card-content {
