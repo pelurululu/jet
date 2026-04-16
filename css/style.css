@@ -3,9 +3,9 @@
 /* ────────────────────────────────────────────────────────────── */
 
 :root {
-  --royal: #2C5F9E;       /* primary royal blue (replaces gold) */
-  --royal-light: #4A7DB5; /* lighter royal (replaces gold-light) */
-  --royal-dark: #1A3F6E;  /* deep royal (replaces gold-dark) */
+  --royal: #1B2F5E;
+  --royal-light: #2E4D8A;
+  --royal-dark: #0F1C3A;
 
   --black: #161616;
   --charcoal: #1E1E1E;
