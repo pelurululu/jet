@@ -150,7 +150,6 @@ nav.scrolled .nav-logo-img {
 
 
 
-
 @keyframes heroZoom {
   from { transform: scale(1.08); }
   to { transform: scale(1.0); }
