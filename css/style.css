@@ -489,9 +489,11 @@ nav.scrolled .nav-logo-img {
   white-space: nowrap;
 }
 
-.charter-header {
-  max-width: 600px;
-  margin-bottom: 70px;
+.charter-card {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .charter-header .section-eyebrow {
