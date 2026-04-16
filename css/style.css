@@ -740,6 +740,24 @@ nav.scrolled .nav-logo-img {
   min-width: 180px;
 }
 
+@media (max-width: 640px) {
+  .ownership-stat-badge {
+    top: -10px;
+    left: -10px;
+    padding: 14px 18px;
+    min-width: 110px;
+  }
+
+  .ownership-stat-num {
+    font-size: 28px;
+  }
+
+  .ownership-stat-label {
+    font-size: 7px;
+    letter-spacing: 0.2em;
+  }
+}
+
 .ownership-stat-num {
   font-family: 'Cormorant Garamond', serif;
   font-size: 52px;
