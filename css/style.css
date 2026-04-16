@@ -494,6 +494,9 @@ nav.scrolled .nav-logo-img {
   height: 480px;
   overflow: hidden;
   cursor: pointer;
+  background: var(--charcoal-2);
+  border: 1px solid rgba(44, 95, 158, 0.1);
+  transition: all 0.3s ease;
 }
 
 .charter-header .section-eyebrow {
@@ -542,6 +545,7 @@ nav.scrolled .nav-logo-img {
 .charter-card-overlay {
   position: absolute;
   inset: 0;
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.95) 0%, rgba(22, 22, 22, 0.3) 60%, transparent 100%);
   z-index: 1;
 }
 
