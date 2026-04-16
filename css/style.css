@@ -37,7 +37,7 @@
     transition: background 0.5s ease, padding 0.4s ease;
   }
   nav.scrolled {
-    background: rgba(8,8,8,0.95);
+    background: rgba(10,10,15,0.95);
     backdrop-filter: blur(12px);
     padding: 18px 60px;
     border-bottom: 1px solid rgba(201,169,110,0.15);
@@ -142,13 +142,13 @@ nav.scrolled .nav-logo-img {
   .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      170deg,
-      rgba(8,8,8,0.15) 0%,
-      rgba(8,8,8,0.3) 40%,
-      rgba(8,8,8,0.85) 80%,
-      rgba(8,8,8,1) 100%
-    );
+background: linear-gradient(
+  170deg,
+  rgba(10,10,15,0.15) 0%,
+  rgba(10,10,15,0.3) 40%,
+  rgba(10,10,15,0.85) 80%,
+  rgba(10,10,15,1) 100%
+);
   }
   .hero-grain {
     position: absolute;
@@ -377,7 +377,8 @@ nav.scrolled .nav-logo-img {
     font-size: 7px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: rgba(245,240,234,0.35);
+   color: rgba(242,237,230,0.35);
+
   }
 
   /* ── SECTION COMMONS ── */
@@ -464,7 +465,7 @@ nav.scrolled .nav-logo-img {
   .charter-card-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(8,8,8,0.95) 0%, rgba(8,8,8,0.3) 60%, transparent 100%);
+   background: linear-gradient(to top, rgba(10,10,15,0.95) 0%, rgba(10,10,15,0.3) 60%, transparent 100%);
   }
   .charter-card-content {
     position: absolute;
@@ -760,7 +761,7 @@ nav.scrolled .nav-logo-img {
     font-weight: 300;
   }
   .contact-right {
-    background: rgba(17,17,17,0.85);
+    background: rgba(18,18,26,0.85);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(201,169,110,0.15);
     padding: 52px 48px;
@@ -808,7 +809,7 @@ nav.scrolled .nav-logo-img {
   .form-group textarea:focus,
   .form-group select:focus { border-color: var(--gold); }
   .form-group textarea { height: 100px; resize: vertical; }
-  .form-group select option { background: #111; }
+  .form-group select option { background: var(--charcoal); }
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .form-submit {
     width: 100%;
@@ -874,12 +875,11 @@ nav.scrolled .nav-logo-img {
   }
   .footer-bottom p {
     font-size: 10px;
-    color: rgba(245,240,234,0.25);
-    letter-spacing: 0.05em;
+    color: rgba(242,237,230,0.25);
   }
   .footer-bottom a {
     font-size: 10px;
-    color: rgba(245,240,234,0.25);
+    color: rgba(242,237,230,0.25);
     text-decoration: none;
     transition: color 0.3s;
   }
